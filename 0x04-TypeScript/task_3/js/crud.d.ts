@@ -1,3 +1,10 @@
+import { RowID, RowElement } from "../interface";
+
+declare function insertRow(row: RowElement): RowID;
+declare function deleteRow(rowId: RowID): void;
+declare function updateRow(rowId: RowID, row: RowElement): RowID;
+
+export { insertRow, deleteRow, updateRow };
 
 
 export function insertRow(row) {
@@ -16,10 +23,3 @@ export function updateRow(rowId, row) {
 }
 
 
-import { RowID, RowElement } from "../interface";
-
-declare function insertRow(row: RowElement): RowID;
-declare function deleteRow(rowId: RowID): void;
-declare function updateRow(rowId: RowID, row: RowElement): RowID;
-
-export { insertRow, deleteRow, updateRow };
