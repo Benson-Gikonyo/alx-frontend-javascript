@@ -21,15 +21,15 @@ function printTeacher({ firstName, lastName }: { firstName: string; lastName: st
 };
 
 interface StudentClassInterface {
-    workOnHomework():string;
-    displayName():string;
+    workOnHomework(): string;
+    displayName(): string;
 }
 
 interface StudentConstructor {
     new (firstName:string, lastName:string): StudentClassInterface
 }
 
-class StudentClass implements StudentClassInterface{
+class StudentClass {
     firstName:string;
     lastName:string;
 
